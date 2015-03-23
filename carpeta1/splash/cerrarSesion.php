@@ -1,0 +1,9 @@
+<?php
+	  session_start();
+	  unset($_SESSION['usuario']); 
+	  unset($_SESSION['pasword']);
+	  unset($_SESSION['nombre']);
+	  unset($_SESSION['tipo']);
+	  session_destroy();
+	  header("location:senas.php");
+?>

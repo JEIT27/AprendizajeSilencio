@@ -1,0 +1,20 @@
+#tabla 
+{
+	background-color: ivory;
+	text-align: justify;
+}
+#tabla h3
+{
+	text-align: center;
+}
+
+img {
+width: 400;
+height: 290px;
+margin-top: -195px;
+margin-left: -290px;
+left: 50%;
+top: 50%;
+position: absolute;
+
+}

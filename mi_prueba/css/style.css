@@ -1,0 +1,95 @@
+body {
+    
+    background: #A9A9F5;
+    
+}
+				#contenedor {
+				width: 1200px;
+				height: 600px;
+				/*border: 1px solid #0000FF;*/
+				position: absolute;
+				top: 40%;
+				left: 40%;
+				margin-top: -300px;
+				margin-left: -500px;
+				font-family:"Helvetica",Arial; 
+				}
+				
+
+				#pantalla {
+				width: 100%;
+				height: 100%;
+				}
+
+				#encabezado{
+				height: 120px;	
+				width: 1200px;
+				background: #A9A9F5;
+				text-align: left;
+				float: center;
+				border-radius: 4;
+
+				}
+
+				#menu_navegacion{
+				height: 30px; 
+				width: 1200px;
+				background: #A9A9F5;
+				/*float: right;*/
+				text-align: right;
+				}
+
+				#menu_lateral{
+				height: 400px;	
+				width: 200px;
+				background: #808080;
+				float: left;
+
+				}
+
+
+				#publicidad{
+				height:600px;	
+				width: 200px;
+				background: #A9A9F5;
+				float: left;
+
+
+				}
+
+				#contenido{
+				height: 530px;	
+				width: 1000px;
+				background: silver;
+				overflow-x: hidden;
+				overflow-y: scroll; 
+
+				
+				}
+
+				
+
+				#pie_pagina{
+				height: 70px;	
+				width: 100%;
+				background: #000000;
+				/*clear: both;*//*elimina los flotantes*/
+				text-align: center;
+				}
+
+				#logo1{
+				height: 100px;	
+				width: 125px;
+				float: left;
+				background: orange;
+				margin: 0;
+
+				}
+				#logo2
+				{
+				height: 100px;	
+				width: 125px;
+				float:right;
+				background: orange;
+				margin: 0;
+				}

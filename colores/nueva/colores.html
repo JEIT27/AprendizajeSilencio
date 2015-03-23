@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<html>
+		<HEAD>
+			<meta http-equiv="Content-Language" content="es">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>.: Colores :.</title>
+		<script type="text/javascript" src="jquery/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="jquery/jquery-ui-1.10.4.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"> <!--Es para el diseño de la página-->
+		<link rel="stylesheet" type="text/css" href="css/menu.css" /> <!--Este css es necesario para el menu de acordeon-->
+		<link rel="stylesheet" type="text/css" href="color.css">
+		
+		</HEAD>
+		
+		<script language="JavaScript">
+		$(function() {
+    		$("#menu").accordion({
+				active: false,
+				collapsible: true,
+				heightStyle: "content"
+			});
+  		});
+	</script>
+		<BODY>
+			<div id="contenedor">
+			   
+			    
+			<header id ="encabezado"><br>
+					<img src="images/logo.png" width="55%" height='85%'>
+			</header>
+			<nav id="menu_navegacion">
+				<hgroup>
+				<!--	<font size="4" color="white"><a href="mapa.html" target="pantalla">Menú Navegación</a></font> -->
+					<button id="disabledButton" disabled><a href="cada_color/video.html#capitulo1" target="pantalla">Video de los colores</a></button>
+				</hgroup>
+				
+			</nav>
+			<aside id="publicidad">
+				<div class="container">
+
+                                       <div class="profile-container unfold">
+                                          <div class="profile">
+                                          <div class="avatar"><img src="images/colores_punta.png" width="70%" height="70%" /></div>
+                                          <div class="follow"><button><i class="icon-plus"></i> Colores</button></div>
+                                       </div>
+                        <ul class="profile-list">
+                                 <li class="first"><a href="cada_color/amarillo.html#capitulo1" target="pantalla">Amarillo</a></li>
+                                 <li class="first"><a href="cada_color/azul.html#capitulo1" target="pantalla">Azul</a></li>
+                                 <li class="first"><a href="cada_color/blanco.html#capitulo1" target="pantalla">Blanco</a></li>
+                                 <li class="first"><a href="cada_color/cafe.html#capitulo1" target="pantalla">Cafe</a></li>
+                                 <li class="first"><a href="cada_color/gris.html#capitulo1" target="pantalla">Gris</a></li>
+                                 <li class="first"><a href="cada_color/morado.html#capitulo1" target="pantalla">Morado</a></li>
+                                 <li class="first"><a href="cada_color/naranja.html#capitulo1" target="pantalla">Naranja</a></li>
+                                 <li class="first"><a href="cada_color/negro.html#capitulo1" target="pantalla">Negro</a></li>
+                             	<li class="first"><a href="cada_color/rojo.html#capitulo1" target="pantalla">Rojo</a></li>
+                             	<li class="first"><a href="cada_color/rosa.html#capitulo1" target="pantalla">Rosa</a></li>
+                             	<li class="first"><a href="cada_color/verde.html#capitulo1" target="pantalla">Verde</a></li>
+                             	<!--<li class="first"><a href="cada_color/video.html#capitulo1" target="pantalla">Video</a></li>-->
+                        </ul>
+               </div>
+			</aside>		
+			<section id ="contenido">
+				<iframe name="pantalla" id="pantalla" src="" frameborder="0" marginwidth="0" marginheight="0" ></iframe>
+			</section>
+			<!--<footer id ="pie_pagina">
+					<hgroup>
+						<br>
+						
+					</hgroup>
+			</footer>-->
+			</div>
+		</BODY>
+	</HTML>

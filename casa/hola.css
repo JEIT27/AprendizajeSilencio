@@ -1,0 +1,42 @@
+body{
+	background-color: white;
+}
+#logo {
+	
+	background-image: url("img/fondo_encabezado.png");
+	background-size: 100% 250px;
+	background-repeat: no-repeat;
+}
+#menu {
+	/*background-color: black;*/
+	height: 40px;
+}
+#button li {
+	display: inline;
+}
+#button li a {
+	font-family: Arial;
+	font-size: 25px;
+	text-decoration: none;
+	float: left;
+	padding: 10px;
+	background-color: #2175bc;
+	color: #fff;
+}
+#button li a:hover {
+	background-color: #2586d7;
+	margin-top: -2px;
+	padding-bottom: 12px;
+}
+h1{
+	font-family: century gothic;
+	text-transform: uppercase;
+	color: #ccc;
+	text-shadow: 1px 1px 1px #666;
+}
+#contenido {
+	background-color: yellow;
+	background-image: url("images/abstract-267046_640.png");
+	background-repeat: no-repeat;
+	background-size: 100% 400px;
+}

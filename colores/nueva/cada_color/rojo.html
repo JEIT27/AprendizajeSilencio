@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ingeniería en Software</title>
+		<link rel="stylesheet" type="text/css" href="../css/formularios.css">
+
+
+	</head>
+
+	<style type="text/css">
+	/* Estilo que muestra la capa flotante */
+	#flotante
+	{
+		position: absolute;
+		display:none;
+		font-family:Arial;
+		font-size:0.8em;
+		width:280px;
+		border:1px solid #808080;
+		background-color:#f1f1f1;
+		padding:5px;
+	}
+</style>
+
+<script type="text/javascript">
+	/**
+	* Funcion que muestra el div en la posicion del mouse
+	*/
+	function showdiv(event,text)
+	{
+		//determina un margen de pixels del div al raton
+		margin=5;
+
+		//La variable IE determina si estamos utilizando IE
+		var IE = document.all?true:false;
+
+		var tempX = 0;
+		var tempY = 0;
+
+		//document.body.clientHeight = devuelve la altura del body
+		if(IE)
+		{ //para IE
+			IE6=navigator.userAgent.toLowerCase().indexOf('msie 6');
+			IE7=navigator.userAgent.toLowerCase().indexOf('msie 7');
+			//event.y|event.clientY = devuelve la posicion en relacion a la parte superior visible del navegador
+			//event.screenY = devuelve la posicion del cursor en relaciona la parte superior de la pantalla
+			//event.offsetY = devuelve la posicion del mouse en relacion a la posicion superior de la caja donde se ha pulsado
+
+			if(IE6>0 || IE7>0)
+			{
+				tempX = event.x
+				tempY = event.y
+				if(window.pageYOffset){
+					tempY=(tempY+window.pageYOffset);
+					tempX=(tempX+window.pageXOffset);
+				}else{
+					tempY=(tempY+Math.max(document.body.scrollTop,document.documentElement.scrollTop));
+					tempX=(tempX+Math.max(document.body.scrollLeft,document.documentElement.scrollLeft));
+				}
+			}else{
+				//IE8
+				tempX = event.x
+				tempY = event.y
+			}
+		}else{ //para netscape
+			//window.pageYOffset = devuelve el tamaño en pixels de la parte superior no visible (scroll) de la pagina
+			document.captureEvents(Event.MOUSEMOVE);
+			tempX = event.pageX;
+			tempY = event.pageY;
+		}
+
+		if (tempX < 0){tempX = 0;}
+		if (tempY < 0){tempY = 0;}
+
+		// Modificamos el contenido de la capa
+		document.getElementById('flotante').innerHTML=text;
+
+		// Posicionamos la capa flotante
+		document.getElementById('flotante').style.top = (tempY+margin)+"px";
+		document.getElementById('flotante').style.left = (tempX+margin)+"px";
+		document.getElementById('flotante').style.display='block';
+		return;
+	}
+
+	/**
+	* Funcion para esconder el div
+	*/
+	function hiddenDiv()
+	{
+		document.getElementById('flotante').style.display='none';
+	}
+</script>	
+	<body>
+	<table id="tabla" align="center">
+		<tr>
+			<td>
+				
+				<a name="capitulo1">
+				<p>
+				
+					<!-- En este div se mostrar la capa emergente -->
+<div id="flotante"></div>
+
+<p>
+<h1></h1>
+
+<div onmouseover="showdiv(event,'Este codigo se ha probado con:<ul><li>IE6, 7, 8 y 9</li><li>Firefox</li><li>Chrome</li><li>Safari</li><li>Opera</li></ul>');" onMouseOut="hiddenDiv()" style='display:table;'><img src="../images/rojo.png" border="4"></div>
+
+
+					
+					
+				</a>
+				
+
+			</td>
+		</tr>
+	</table>
+
+	</table>
+    </body>
+</html>

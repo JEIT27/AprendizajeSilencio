@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MY KITESURF EXAMPLE</title>
+
+<!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<style type="text/css">
+<!--
+body {
+	margin-top: 0px;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #E7E7E7;
+}
+-->
+</style>
+<link href="css/xom.css" rel="stylesheet" type="text/css">
+
+<script src="free_validation.js"></script>
+<script>
+	required.add('Full_Name','NOT_EMPTY','Full Name');
+	required.add('Email_Address','EMAIL','Email Address');
+	required.add('Your_Message','NOT_EMPTY','Your Message')
+	</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style type="text/css">
+<!--
+a:link {
+	color: #D2D2D2;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FCFCFC;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+	color: #E9E9E9;
+}
+.Estilo1 {color: #FFFFFF}
+.Estilo2 {color: #000000}
+-->
+</style>
+</head>
+<body>
+<!--Start wrapper -->
+<div class="containerWrap"><a href="../senas.php"><img src="../senas_imagenes/iconos/home (2).png" width="50" height="50" border="0"></a>Inicio
+ <!--start header -->
+  <div class="header">
+    <!--start logo -->
+      <div class="logo">
+        <h1><input type="image" name="imageField2" src="../senas_imagenes/iconos/la-transferencia-de-telefono-icono-5346-128.png" width="50" height="50">     
+        Contacto</h1>
+        <form name="form2" method="post" action="">
+          <label></label>
+        </form>
+    </div><!--end logo -->
+    <!--start navigation -->
+    <div id="nav"></div>
+    <!--end navigation -->
+    <div class="content" id="wrapper">
+      <article>
+        <h3 class="shad">Escribenos tus comentarios, sobre la nestra página web, y tus sus sgerencias ..Gracias.. </h3>
+        <hr>
+        <h2 class="shadows Estilo1"><span class="Estilo2">CONTACT US
+          </span>
+          <input type="image" name="imageField" src="../senas_imagenes/iconos/la-tierra-mano-a-mano-el-intercambio-mundial-de-internet-icono-3875-128 (1).png">
+        </h2>
+      <!--contact form -->
+        <form name="contactformfree" method="post" action="free_process.php" onSubmit="return validate.check(this)">
+	<table width="400px" class="cffree">
+	<tr>
+	 <td colspan="2">
+	  <p style="text-align:center">&nbsp;</p>
+	  <p style="text-align:center">Los campos marcados con  <span class="required_star"> * </span> son importantes </p></td>
+	</tr>
+	<tr>
+	 <td valign="top" class="cffree_td">
+	  <label for="Full_Name" class="required"><img src="../senas_imagenes/iconos/grupo-de-usuarios-foro-de-icono-8816-48.png" width="30" height="30">Nombre<span class="required_star"> * </span></label>	 </td>
+	 <td valign="top" class="cffree_td">
+	  <input type="text" name="Full_Name" id="Full_Name" maxlength="80" style="width:250px">	 </td>
+	</tr>
+	<tr>
+	 <td valign="top" class="cffree_td">
+	  <label for="Email_Address" class="required"><img src="../senas_imagenes/iconos/demonio-de-correo-beos-icono-4592-128.png" width="30" height="30">Correo Electronico <span class="required_star"> * </span></label>	 </td>
+	 <td valign="top" class="cffree_td">
+	  <input type="text" name="Email_Address" id="Email_Address" maxlength="100" style="width:250px">	 </td>
+	</tr>
+	<tr>
+	 <td valign="top" class="cffree_td">
+	  <label for="Telephone_Number" class="not-required"><img src="../senas_imagenes/iconos/phone.png" width="30" height="30">Número Telefonico </label>	 </td>
+	 <td valign="top" class="cffree_td">
+	  <input type="text" name="Telephone_Number" id="Telephone_Number" maxlength="100" style="width:250px">	 </td>
+	</tr>
+	<tr>
+	 <td valign="top" class="cffree_td">
+	  <label for="Your_Message" class="required"><img src="../senas_imagenes/iconos/mensaje.png" width="30" height="30">Tu mensaje: <span class="required_star"> * </span></label>	 </td>
+	 <td valign="top" class="cffree_td">
+	  <textarea style="width:250px;height:120px" name="Your_Message" id="Your_Message" maxlength="2000"></textarea>	 </td>
+	</tr>
+	<tr>
+	 <td colspan="2" style="text-align:center"  class="cffree_td"><span class="cffree_td" style="text-align:center"><span class="cffree_td" style="text-align:center">
+	   <input name="submit" type="submit" value="Enviar al administrador">
+	 </span></span></td>
+	</tr>
+	</table>
+        </form>
+      <!--end contact form -->
+      </article>
+      <!--start article -->
+      <aside>
+        <hgroup>
+          <h1>Bienvenido a contacto &quot;Enseñanza en Silencio&quot; </h1>
+        </hgroup>
+        <progress value="30" max="100"></progress>
+      </aside>                 
+ </div>
+  </div>
+ <!--start footer -->  
+  <footer>
+ <div class="top"> 
+ <!--end footer -->
+ </div>
+  <div class="footerWrapper" id="footercontent">
+    <li></li>
+    <li><a href="http://www.imediacreatives.it" target="_blank">Enseñanza en Silencio || Ingeniería en Software </a>&copy; copyrigth</li>
+    </div> 
+</footer> 
+</div>
+<!--end wrapper -->
+<!-- Free template distributed by http://freehtml5templates.com -->
+</body>
+</html>

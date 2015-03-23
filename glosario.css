@@ -1,0 +1,70 @@
+/*** Table style ***/
+ 
+table.tablestyle{
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border-collapse: separate;
+    border-spacing: 0.4em;
+    background-color: #ececff;
+    width:70%;
+    /*border: solid #aaa 1px;*/
+     
+    -webkit-box-shadow: 1px 1px 5px #bbb; 
+    -moz-box-shadow: 1px 1px 5px #bbb; 
+    -o-box-shadow: 1px 1px 5px #bbb;}
+     
+ 
+table caption{
+    margin:5px 0;
+    text-align:center;
+    font-size:12.5pt;
+    letter-spacing:2px;}
+ 
+tr.tablehead th{
+    font-weight:bold !important;}
+ 
+.tablestyle td {
+    border:1px solid #E2E2E2;
+    border-top: 1px solid #b9b9b9 !important;
+    border-bottom: 1px solid #b9b9b9 !important;
+    padding: 10px;
+    text-align: left;    
+}
+ 
+.tablestyle th {
+    border-left: 1px solid #d1d1d1 !important;
+    padding: 10px; 
+    font-weight:normal !important;
+}
+ 
+.tablestyle td:first-child, .tablestyle th:first-child {
+    border-left: none;
+}
+ 
+.tablestyle th {
+    background-color: #e0ffc2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#bbee77), to(#d7f5ad));
+    background-image: -webkit-linear-gradient(top, #bbee77, #d7f5ad);
+    background-image:    -moz-linear-gradient(top, #bbee77, #d7f5ad);
+    background-image:     -ms-linear-gradient(top, #bbee77, #d7f5ad);
+    background-image:      -o-linear-gradient(top, #bbee77, #d7f5ad);
+    background-image:         linear-gradient(top, #bbee77, #d7f5ad);
+}
+ 
+.tablestyle tr:hover {
+    background: #a8ffe2;
+    transition: all 0.1s ease;  
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+}
+ 
+table tbody tr th a{
+    color:#7D7DFF !important;
+    font-weight:normal; }
+     
+table tbody tr th a:hover{
+    color:#F16266 !important;
+    font-weight:normal;}
+     
+/*** Fin Table Styles ***/ 

@@ -1,0 +1,8 @@
+.botonimagen{
+  background-image:url(boton/icono.png);
+  background-repeat:no-repeat;
+  height:50px;
+  width:50px;
+  background-position:center;
+  border-radius: 30px;
+}

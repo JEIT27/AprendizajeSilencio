@@ -1,0 +1,228 @@
+body{
+	background-color: white;
+}
+#encabezado{
+	/*background-color: yellow;*/
+}
+#logo {
+	background-image: url("images/fondo_encabezado.png");
+	background-size: 100% 250px;
+	background-repeat: no-repeat;
+}
+#contenido{
+	/*background-color: green;*/
+	/*background-image: url("images/01.png");*/
+	background-repeat: no-repeat;
+	background-size: 250px 250px;
+	text-align: center;
+	/*width: 900px;*/
+	height: 270px;
+}
+#mostrar_contenido{
+	text-align: center;
+	height: 300px;
+	width: 100%;
+	/*background-color: pink;*/
+}
+
+/*Para el titulo del contendio*/
+h1{
+	font-family: century gothic;
+	text-transform: uppercase;
+	color: #ccc;
+	text-shadow: 1px 1px 1px #666;
+}
+
+/*Estilo en los botones*/
+.boton {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	padding: 12px 20px;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #666666;	
+	box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+	position: relative;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	display: inline-block;
+	font-family: Arial, Helvetica, sans;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+}
+.boton:hover {
+	box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+	color: #fff !important;
+}
+
+.boton:active {
+	top: 7px;
+	box-shadow: 0 2px 0 #393939, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);	
+	color: #fff !important;
+}
+
+.formaBoton {
+	border-radius: 10px;	
+	padding-left: 70px;
+	padding-right: 100px;
+}
+
+
+
+
+
+/*Diseño para el color azul*/
+.azul {
+	background: #2a8ad8;
+	box-shadow: 0 5px 5px #364a8e, 0 9px 0 #25325e, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+
+.azul:hover {
+	box-shadow: 0 5px 5px #364a8e, 0 9px 0 #25325e, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.azul:active {
+	box-shadow: 0 2px 0 #25325e, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color amarillo*/
+.amarillo{
+	background-color: yellow;
+	box-shadow: 0 5px 5px #AEB404, 0 9px 0 #AEB404, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.amarillo:hover {
+	box-shadow: 0 5px 5px #AEB404, 0 9px 0 #AEB404, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.amarillo:active{
+	box-shadow: 0 2px 0 #AEB404, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color blanco*/
+.blanco{
+	background-color: white;
+	box-shadow: 0 5px 5px #E6E6E6, 0 9px 0 #E6E6E6, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.blanco:hover {
+	box-shadow: 0 5px 5px #E6E6E6, 0 9px 0 #E6E6E6, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.blanco:active{
+	box-shadow: 0 2px 0 #E6E6E6, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color cafe*/
+.cafe{
+	background-color: #886A08;
+	box-shadow: 0 5px 5px #3A2F0B, 0 9px 0 #3A2F0B, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.cafe:hover {
+	box-shadow: 0 5px 5px #3A2F0B, 0 9px 0 #3A2F0B, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.cafe:active{
+	box-shadow: 0 2px 0 #3A2F0B, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color gris*/
+.gris{
+	background-color: grey;
+	box-shadow: 0 5px 5px #424242, 0 9px 0 #424242, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.gris:hover {
+	box-shadow: 0 5px 5px #424242, 0 9px 0 #424242, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.gris:active{
+	box-shadow: 0 2px 0 #424242, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color morado*/
+.morado{
+	background-color: #BF00FF;
+	box-shadow: 0 5px 5px #8904B1, 0 9px 0 #8904B1, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.morado:hover {
+	box-shadow: 0 5px 5px #8904B1, 0 9px 0 #8904B1, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.morado:active{
+	box-shadow: 0 2px 0 #8904B1, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color naranja*/
+.naranja{
+	background-color: #FFBF00;
+	box-shadow: 0 5px 5px #DBA901, 0 9px 0 #DBA901, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.naranja:hover {
+	box-shadow: 0 5px 5px #DBA901, 0 9px 0 #DBA901, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.naranja:active{
+	box-shadow: 0 2px 0 #DBA901, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color negro*/
+.negro{
+	background-color: #2E2E2E;
+	box-shadow: 0 5px 5px #151515, 0 9px 0 #151515, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.negro:hover {
+	box-shadow: 0 5px 5px #151515, 0 9px 0 #151515, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.negro:active{
+	box-shadow: 0 2px 0 #151515, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color rojo*/
+.rojo{
+	background-color: #FF0000;
+	box-shadow: 0 5px 5px #DF0101, 0 9px 0 #DF0101, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.rojo:hover {
+	box-shadow: 0 5px 5px #DF0101, 0 9px 0 #DF0101, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.rojo:active{
+	box-shadow: 0 2px 0 #DF0101, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color rosa*/
+.rosa{
+	background-color: #F781BE;
+	box-shadow: 0 5px 5px #FE2E9A, 0 9px 0 #FE2E9A, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.rosa:hover {
+	box-shadow: 0 5px 5px #FE2E9A, 0 9px 0 #FE2E9A, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.rosa:active{
+	box-shadow: 0 2px 0 #FE2E9A, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*Diseño para el color verde*/
+.verde{
+	background-color: #01DF01;
+	box-shadow: 0 5px 5px #088A08, 0 9px 0 #088A08, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.verde:hover {
+	box-shadow: 0 5px 5px #088A08, 0 9px 0 #088A08, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+.verde:active{
+	box-shadow: 0 2px 0 #088A08, 0px 4px 4px rgba(0,0,0,0.3), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+
+
+#menu {
+	/*background-color: black;*/
+	height: 40px;
+}
+#button li {
+	display: inline;
+}
+#button li a {
+	font-family: Arial;
+	font-size: 25px;
+	text-decoration: none;
+	float: left;
+	padding: 10px;
+	background-color: #2175bc;
+	color: #fff;
+}
+#button li a:hover {
+	background-color: #2586d7;
+	margin-top: -2px;
+	padding-bottom: 12px;
+}
