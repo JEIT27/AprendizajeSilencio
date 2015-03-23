@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>::Apartado-Aprendizaje::</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+    <!-- jQuery lib from google server ===================== -->
+	<script src="js/jquery-1.7.2.min.js"></script>
+<!--  javaScript -->
+<script>  
+<!--  // building select nav for mobile width only -->
+$(function(){
+	// building select menu
+	$('<select />').appendTo('nav');
+
+	// building an option for select menu
+	$('<option />', {
+		'selected': 'selected',
+		'value' : '',
+		'text': 'Choise Page...'
+	}).appendTo('nav select');
+
+	$('nav ul li a').each(function(){
+		var target = $(this);
+
+		$('<option />', {
+			'value' : target.attr('href'),
+			'text': target.text()
+		}).appendTo('nav select');
+
+	});
+
+	// on clicking on link
+	$('nav select').on('change',function(){
+		window.location = $(this).find('option:selected').val();
+	});
+});
+
+// show and hide sub menu
+$(function(){
+	$('nav ul li').hover(
+		function () {
+			//show its submenu
+			$('ul', this).slideDown(150);
+		}, 
+		function () {
+			//hide its submenu
+			$('ul', this).slideUp(150);			
+		}
+	);
+});
+//end
+</script>
+<!-- end -->
+</head>
+<body>
+<div class="container">
+			<!-- freshdesignweb top bar -->
+            <div class="freshdesignweb-top">
+            <img src="apartado_aprendizaje/logo_aprendizaje.png">
+            </div><!--/ freshdesignweb top bar -->
+<ul class="menuUL">
+    <!-- The class names that are assigned to the links correspond to name of the shape that is shown on hover: -->
+    <li><a href="../index.php" class="house">Inicio</a></li>
+    <li><a href="../post.html" class="wrench">¿Qué son las señas?</a></li>
+    <li><a href="../glosario.html" class="envelope">Glosario</a></li>
+    <li><a href="../alfabeto.html" class="info">Alfabeto</a></li>
+</ul>
+<br>
+<br>
+			<header>
+				<h1><span>Tutoriales</span>Apartados por niveles</h1>
+            </header>       
+     <!-- start header here-->
+	<header>
+		<div id="fdw">
+				<!--nav-->
+					<nav>
+
+						<ul>
+							<li>
+								<a href="#">Básico<span class="arrow"></span></a>
+								<ul style="display: none;" class="sub_menu">
+									<li class="arrow_top"></li>
+									<li><a href="../colores/1.html"><img src="apartado_aprendizaje/colores.png">Colores</a></li>
+									<li><a href="../casa/test08.html"><img src="apartado_aprendizaje/casa.png">Casa</a></li> 
+									<li><a href="#"><img src="apartado_aprendizaje/frutas.png">Frutas</a></li>
+									<li><a href="#"><img src="apartado_aprendizaje/numero.png" width="40" height="40">Números</a></li>
+									<li><a href="#"><img src="apartado_aprendizaje/palabra.png" width="40" height="40">Palabras</a></li>
+									<li><a href="#"><img src="apartado_aprendizaje/animal.png" width="50" height="50"> Reino animal</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Intermedio<span class="arrow"></span></a>
+								<ul style="display: none;" class="sub_menu">
+									<li class="arrow_top"></li>
+									<li><a href="#"><img src="apartado_aprendizaje/alimentos.png" width="40" height="40"> Alimentos</a></li>
+									<li><a href="#"><img src="apartado_aprendizaje/pais.jpg" width="40"  height="40"> Países, Ciudades <br>  y Estados</a></li>
+									<li><a href="#"><img src="apartado_aprendizaje/carro.jpg" width="40" height="40"> Vehículos y Transporte</a></li>
+									<li><a href="#"><img src="apartado_aprendizaje/profe.jpg" width="40" height="40"> Oficios y Porfesiones</a></li>
+								</ul>
+							</li>
+							
+						</ul>
+					</nav>
+		</div><!-- end fdw -->
+	</header><!-- end header -->
+    
+</div>
+</body>
+</html>

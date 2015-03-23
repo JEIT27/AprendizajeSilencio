@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_libros_consulta" value="name:IdLibro;datatype:string,name:Nombre;datatype:string,name:Autor;datatype:string,name:Cantidad;datatype:int,name:Precio;datatype:real" />
+</info>
